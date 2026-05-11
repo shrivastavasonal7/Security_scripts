@@ -1,0 +1,8 @@
+127.0.0.1 - - [10/May/2026:13:00:00 +0000] "GET /index.php?id=1 HTTP/1.1" 200 4523
+127.0.0.1 - - [10/May/2026:13:01:02 +0000] "GET /search?q=test'; DROP TABLE users; -- HTTP/1.1" 200 7392
+127.0.0.1 - - [10/May/2026:13:02:15 +0000] "POST /login HTTP/1.1" 200 1250
+127.0.0.1 - - [10/May/2026:13:03:31 +0000] "GET /products?cat=1 OR 1=1 HTTP/1.1" 200 8451
+127.0.0.1 - - [10/May/2026:13:04:48 +0000] "GET /download?file=../../etc/passwd HTTP/1.1" 404 612
+127.0.0.1 - - [10/May/2026:13:05:59 +0000] "GET /profile?id=1 UNION SELECT username,password FROM users HTTP/1.1" 200 12983
+127.0.0.1 - - [10/May/2026:13:07:12 +0000] "GET /help HTTP/1.1" 200 3541
+127.0.0.1 - - [10/May/2026:13:08:20 +0000] "GET /page?id=2; EXEC xp_cmdshell('dir') HTTP/1.1" 500 2321
